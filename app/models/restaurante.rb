@@ -11,7 +11,7 @@ class Restaurante < ActiveRecord::Base
 	validades_uniqueness_of :nome, message: "nome já cadastrado"
 	
 
-
+  
 	validade :primeira_letra_deve_ser_maiuscula
 
 	private
