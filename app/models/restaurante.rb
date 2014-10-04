@@ -7,7 +7,6 @@ class Restaurante < ActiveRecord::Base
 	validates_presence_of :nome, message: "campo nome deve ser preenchido"
 	validates_presence_of :endereco, message: "campo endereço deve ser preenchido"
 	validates_presence_of :especialidade, message: "campos especialidade deve ser preenchido"
-	validade :primeira_letra_deve_ser_maiuscula
 
   private
 	def primeira_letra_deve_ser_maiuscula
